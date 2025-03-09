@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff's Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Jeff's Store</h1>
+</header>
+
+<div class="container">
+    <h2> My Products</h2>
+    <div class="product" data-price="1800.00">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>SAMBA</h3>
+        <p>Price: ₱1800.00</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="product" data-price="2750.50">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Air Force 1</h3>
+        <p>Price: ₱2750.50</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="product" data-price="1110.36">
+        <img src="product3.jpg" alt="Product 3">
+        <h3>Jordan 4</h3>
+        <p>Price: ₱1110.36</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="cart-info">
+        <p>Items in Cart: <span id="cart-count">0</span></p>
+        <p>Total Price: ₱<span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Jeff's Store. All rights reserved.</p>
+    <a href="https://www.facebook.com/share/18TuKiEEzY/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="fb-icon">
+    </a>
+</footer>
+
+<script src="store.js"></script>
+
+</body>
+</html>
